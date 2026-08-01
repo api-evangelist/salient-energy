@@ -1,7 +1,24 @@
 aid: salient-energy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/salient-energy.png
 name: Salient Energy
-description: Salient Energy is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Salient Energy is a Dartmouth, Nova Scotia based clean-energy hardware company developing
+  zinc-ion batteries as a safer, lower-cost alternative to lithium-ion for renewable energy storage and
+  grid applications. Its cells use a non-toxic, water-based electrolyte that eliminates fire risk, and are
+  built from low-cost zinc and manganese materials sourced in North America, with a roughly 50% lower
+  production carbon footprint than lithium-ion. The company positions its technology as a scalable answer
+  to lithium supply constraints for stationary energy storage. Salient Energy manufactures physical battery
+  hardware and does not publish a public developer API, SDK, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/salient-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Energy
+- Energy Storage
+- Battery
+- Zinc-Ion Battery
+- Clean Energy
+- Climate Tech
+- Manufacturing
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/salient-energy-domain-security.yml
 - type: Website
   url: https://salientenergyinc.com/
+- type: Careers
+  url: https://jobs.lever.co/salient-energy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/salient-energy/
+- type: Twitter
+  url: https://twitter.com/SalientEnergy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
